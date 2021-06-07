@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: "Roboto", sans-serif;
+  color: rgb(155, 91, 214);
+  font-size: 14pt;
+  line-height: 20pt;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+button,
+a {
+  cursor: pointer;
+  border: none;
+}

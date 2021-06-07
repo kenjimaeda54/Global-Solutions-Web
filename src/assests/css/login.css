@@ -1,0 +1,90 @@
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 250px auto;
+  grid-template-rows: 250px auto;
+  grid-template-areas:
+    "HD   HD"
+    "MN   MN";
+  height: 100vh;
+}
+
+img {
+  height: 300px;
+  width: 350px;
+}
+
+h3 {
+  font-weight: 500;
+  color: rgb(155, 91, 214);
+  font-size: 18pt;
+}
+
+.head {
+  grid-area: HD;
+  background-color: rgb(230, 63, 42, 0.2);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  grid-area: MN;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.form form {
+  display: flex;
+  margin-top: 10px;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  width: 70vw;
+  background: rgb(230, 63, 42, 0.2);
+  box-shadow: 0px 20px 30px -5px #7f89b927;
+  border-radius: 8px;
+  filter: drop-shadow(0px 20px 30px -5px #7f89b927);
+}
+.form h3 {
+  margin: 20px;
+}
+
+.form span {
+  margin: 5px;
+}
+.form label {
+  display: block;
+  align-self: flex-start;
+  margin: 5px 20px;
+}
+.form input {
+  width: 65vw;
+  padding: 3px;
+  border: 2px solid rgb(155, 91, 214);
+}
+.form button {
+  display: block;
+  margin: 30px auto;
+  padding: 10px;
+  width: 65vw;
+  border-radius: 3px;
+  background-color: rgb(230, 63, 42, 0.2);
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+small {
+  display: block;
+  align-self: flex-end;
+  margin-right: 15px;
+  color: rgb(223, 21, 21);
+  font-style: italic;
+}

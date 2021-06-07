@@ -1,0 +1,154 @@
+.container {
+  display: grid;
+  grid-template-columns: 100px auto; /*vertical */
+  grid-template-rows: 70px auto; /*linha   */
+  grid-template-areas:
+    "AS  HD"
+    "AS  MN";
+  height: 100vh;
+}
+
+[home]::first-letter {
+  color: rgb(226, 43, 128);
+  font-size: 16pt;
+}
+
+img {
+  width: 1.7vw;
+  height: 1.7vw;
+}
+
+.head {
+  grid-area: HD;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(230, 63, 42, 0.2);
+  border-bottom: 2px solid rgb(171, 38, 189);
+  padding: 7px;
+}
+.welcome-user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50vw;
+}
+
+.welcome-user > h3 {
+  display: block;
+  align-self: flex-start;
+}
+
+.aside {
+  grid-area: AS;
+  display: flex;
+  flex-direction: column;
+  padding: 30px auto;
+  align-items: center;
+  background-color: rgb(230, 63, 42, 0.2);
+}
+@media screen and (min-width: 900px) {
+  .container {
+    grid-template-columns: 250px auto; /*vertical */
+  }
+}
+
+.aside h2 {
+  display: block;
+  margin: 50px auto;
+}
+.aside ul {
+  margin: 0 10px;
+  list-style: none;
+}
+.aside a {
+  font-size: 14pt;
+  line-height: 35pt; /* distancia na linha */
+  transition: opacity 0.2;
+}
+a:hover {
+  opacity: 0.7;
+}
+
+.main {
+  grid-area: MN;
+  background-color: rgb(230, 63, 42, 0.4);
+  height: calc(100vh - 70px);
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(63, 46, 78);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(148, 140, 155);
+}
+
+.main-card {
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  grid-template-areas:
+    "CD1  CD2  CD3"
+    "CD4  CD5  CD6 ";
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 450px;
+  margin: 10px;
+  box-shadow: 0px 20px 30px -5px rgb(63, 46, 78);
+  border-radius: 8px;
+  transition: all 0.5;
+}
+.card:hover {
+  transform: translateY(10px);
+  opacity: 0.8;
+}
+
+.card > img {
+  display: flex;
+  width: 250vw;
+  height: 37vh;
+}
+
+.start {
+  display: flex;
+}
+.start > img {
+  width: 7vw;
+  height: 7vw;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 25vw;
+}
+.nav::before {
+  display: block;
+  content: "";
+  border-top: 1px solid rgb(63, 46, 78);
+}
+
+.nav ul {
+  list-style: none;
+}
+.card1 {
+  grid-area: CD1;
+}
+.card2 {
+  grid-area: CD2;
+}
+.card3 {
+  grid-area: CD3;
+}
+.card4 {
+  grid-area: CD4;
+}
