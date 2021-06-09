@@ -253,3 +253,9 @@ a {
   color: rgb(63, 46, 78);
   font-weight: 500;
 }
+
+[logofiap] {
+  margin-top: -20px;
+  width: 200px;
+  height: 200px;
+}
