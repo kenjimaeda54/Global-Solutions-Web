@@ -92,7 +92,7 @@ a:hover {
   grid-template-columns: repeat(3 1fr);
   grid-template-areas:
     "CD1  CD2  CD3"
-    "CD4  CD5  CD6 ";
+    "CD4  CD5  CD6";
 }
 
 .card {
@@ -153,6 +153,10 @@ a:hover {
 .card4 {
   grid-area: CD4;
 }
+.card5 {
+  grid-area: CD5;
+}
+
 .modal {
   position: fixed;
   top: 0;
