@@ -8,16 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../assests/css/index.css"  />
     <link rel="stylesheet" type="text/css" href="../assests/css/fedback.css"  />
+    <script  defer text="text/javascript" src="../javascript/name-user.js" ></script> 
+    <script defer text="text/javascript" src="../javascript/feedback-user-name.js"    ></script>
     <title>Hotéis e carro</title>
 </head>
 <body>
     <div class="container">
          <div class="head" >
-             <small home > Inicio  </small>
+             <small home > Comentários  </small>
             <div class="welcome-user" >
-             <h3 class="name" > Ricardo Kenji</h3>
+             <div class="name" > </div>
              <div style="margin:5px;" > </div>
-             <span class="user-emoji"  >&#128512</span>
+             <div class="user-emoji"  ></div>
             </div>  
          </div>
          <div class="aside" >
@@ -29,20 +31,24 @@
               </li>
               <li>
                 <img  alt="ícone do menu hotéis" src="../assests/img/briefcase.svg" />
-                <a href="./hotel.html"  > Hotéis </a>
+                <a  href="./hotel.html"  > Hotéis </a>
               </li>
               <li>
                 <img  alt="ícone do menu de carro" src="../assests/img/truck(1).svg" />
-                <a href="./car.html" > Locadoras carros </a>
+                <a href="./car.html">   Locadoras carros </a>
               </li>
               <li>
                 <img  alt="ícone do menu de carro" src="../assests/img/message-circle.svg" />
                 <a href="./fedback.html" > Comentários </a>
               </li>
-               <li>    
+              <li>
                 <img  alt="ícone do menu de carro" src="../assests/img/user.svg" />
-                <a href="./group.html" > Quem somos </a>
+                <a  href="./group.html" >  Quem somos </a>
               </li>
+              <li>    
+                <img  alt="ícone do menu de carro" src="../assests/img/log-out.svg" />
+                <a href="./go-out.html" > Sair </a>
+              </li>           
             </ul>  
          </div> 
          <div class="main" >
@@ -63,7 +69,7 @@
             </div>    
             </div>
             <div class="comment-user1" > 
-              <div class=img-user>
+              <div class="img-user">
               </div>
               </div>            
               <div class="comment" > 
@@ -75,14 +81,17 @@
               </div>    
               </div>
             <div class="fedback-user" >
-              <h3> Ricardo Kenji </h3>
-            <div class="file-user" >          
+              <div class="nameFeedback"> 
+              </div>
+            <div class="option-user" >
+            <div class="file-user" >            
               <label for="fname" > Insira uma foto  </label>
-              <input type="file"  name="input file" />
-            </div>
-            <div class="select" >
-             <label for="fSelect" > Hotéis </label>     
-              <select>
+              <input type="file"  name="input file" accept="image/png, image/jpeg" /> 
+            </div> 
+            <div class="select1"> 
+            <label for="fSelect" > Hotéis </label>   
+             <select class="hotel-selected" >
+                <option value=0  label="escolha" />
                 <option value=1  label="Locadora Movida" /> 
                 <option value=2  label="Locadora Localiza" />
                 <option value=3  label="Locadora Unidas" />
@@ -98,22 +107,30 @@
                 <option value=13  label="Golden Tulip Paulista Plaza" />
                 <option value=14  label="Renaissance São Paulo Hotel" />   
             </select>
-            </div>
-           <div class="select" >
+          </div>
+          <div class="select2">   
             <label for="fselect" > Classificação </label>  
-            <select>    
+            <select class="selected-evaluation"  > 
+                <option value=0 label="escolha"/>   
                 <option value=1 label=1 />
                 <option value=2 label=2 />
                 <option value=3 label=3 />
                 <option value=4 label=4 />
                 <option value=5 label=5 />
-            </select> 
+            </select>
+          </div>   
           </div> 
-            <textarea autofocus cols="15" rows="4"  maxlength="150" > </textarea>  
-          <div class="button" >
-            <button> Enviar </button>
-          </div> 
-        </div>
+            <textarea autofocus cols="70" rows="4"  maxlength="150" >
+            </textarea> 
+          <div class="buton-send">   
+            <button type="button" onclick="submitData()" > 
+              <img style="margin: -3px;"  src="../assests//img/chevrons-right(1).svg"  alt="imagem do feedback usuário" /> 
+               <small> Enviar </small> 
+            </button>
+          </div>   
+          </img>    
+          </div>
       </div>
+      <script src="../javascript/feedback-content.js" ></script>
 </body>
 </html>
