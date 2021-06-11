@@ -127,10 +127,15 @@ a {
   width: 100px;
   border-radius: 70%;
 }
+.img-user1 > img {
+  height: 150px;
+  width: 100px;
+  border-radius: 70%;
+}
 
 .fedback-user {
   grid-area: MAIN;
-  margin-top: -430px;
+  margin-top: -0px;
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -212,12 +217,36 @@ textarea {
 .comment-user1 {
   grid-area: USER2;
   width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-top: 20px;
 }
+.text-user1 {
+  color: rgb(63, 46, 78);
+}
+
+.img-user1 > img {
+  display: flex;
+  width: 70%;
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  left: 70px;
+  top: -40px;
+}
+
+.comment {
+  width: 100%;
+  margin-left: 450px;
+}
+
 * {
   overflow-y: hidden;
+}
+.error-feedback > span {
+  color: rgb(235, 19, 19);
+  font-weight: 500;
+  font-style: italic;
 }
