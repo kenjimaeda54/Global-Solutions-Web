@@ -36,9 +36,9 @@ const submitData = () =>{
           star:[
           "../assests/img/star.svg",
           "../assests/img/star.svg",
-          "../assests/img/start-empty.svg",
-          "../assests/img/start-empty.svg",
-          "../assests/img/start-empty.svg",
+          "../assests/img/star-empty.svg",
+          "../assests/img/star-empty.svg",
+          "../assests/img/star-empty.svg",
          ]},
          {
           value:3, 
@@ -46,8 +46,8 @@ const submitData = () =>{
           "../assests/img/star.svg",
           "../assests/img/star.svg",
           "../assests/img/star.svg",
-          "../assests/img/start-empty.svg",
-          "../assests/img/start-empty.svg",
+          "../assests/img/star-empty.svg",
+          "../assests/img/star-empty.svg",
          ]},
          {
           value:4, 
@@ -70,6 +70,7 @@ const submitData = () =>{
 
     ]
        
+     let checkComment = false;
      const getName =  localStorage.getItem("name");
      const name =  JSON.parse(getName);
      const imgUserSelected = document.querySelector('input').files[0];
@@ -82,6 +83,7 @@ const submitData = () =>{
      const textAreaUser = document.querySelector('textarea').value;
      const titleFeedback = document.querySelector('.title-user');
      const errorFeedback = document.querySelector('.error-feedback');
+     const error = errorFeedback.innerHTML = `<span class="error-span" > Você precisa preencher todos campos e colocar foto </span>`
      const labelSelectedHotel = hotelSelected.filter(item =>{
        if( Number(valueHotelSelected) === item.value) return item.label
      });
@@ -89,7 +91,7 @@ const submitData = () =>{
        if(Number(valueSelectedOpinion) === item.value) return item.star   
      })
      if(typeof imgUserSelected === 'undefined' || Number(valueHotelSelected) === 0 || Number(valueSelectedOpinion) === 0){
-          return errorFeedback.innerHTML = `<span> Você precisa preencher todos campos e colocar foto </span>`
+          return error;
      }
      const formatedImg = URL.createObjectURL(imgUserSelected);
      imgDiv.innerHTML = `<img src=${formatedImg}  alt="imagem do usuario " />`
@@ -99,9 +101,18 @@ const submitData = () =>{
                                <img src=${labelSelectedOpinion[0].star[3]} alt="imagem estrelas feedback" /> 
                                <img src=${labelSelectedOpinion[0].star[4]} alt="imagem estrelas feedback" /> 
                                `
-     nameUser.innerHTML = `${name}`
-     textUser.innerHTML =  `${textAreaUser}  `                     
-     titleFeedback.innerHTML = `${labelSelectedHotel[0].label}`  
-             
+     nameUser.innerHTML = `${name}`;
+     textUser.innerHTML =  `${textAreaUser}  `;                   
+     titleFeedback.innerHTML = `${labelSelectedHotel[0].label}`;
+     const remove = document.querySelector(".error-span");
+     remove.parentNode.removeChild(remove)
+     checkComment = true;
+     if( checkComment)   {            
+     document.querySelector('.hotel-selected').value = 0;
+     document.querySelector('.selected-opinion').value = 0;
+     document.querySelector('textarea').value = '';
+     document.querySelector('input').value = '';
+     
+     }    
                        
 }    

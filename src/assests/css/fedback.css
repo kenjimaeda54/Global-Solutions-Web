@@ -133,6 +133,12 @@ a {
   border-radius: 70%;
 }
 
+.img-user2 > img {
+  height: 150px;
+  width: 100px;
+  border-radius: 70%;
+}
+
 .fedback-user {
   grid-area: MAIN;
   margin-top: -0px;
@@ -217,13 +223,26 @@ textarea {
 .comment-user1 {
   grid-area: USER2;
   width: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
 }
+
+.comment-user2 {
+  grid-area: USER2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
 .text-user1 {
+  color: rgb(63, 46, 78);
+}
+
+.text-user2 {
   color: rgb(63, 46, 78);
 }
 
