@@ -128,6 +128,53 @@ Codigo abaixo estamos usando local storage para persistir nome do usuario na apl
  
  ```
  
+ Essa tecnica abaixo é excelente para construimos fundos sobresalentes,gerando  efeito bacana em cards e abas de login
+ 
+ ` ``css
+  background: rgb(230, 63, 42, 0.2);
+  box-shadow: 0px 20px 30px -5px #7f89b927;
+  border-radius: 8px;
+  filter: drop-shadow(0px 20px 30px -5px #7f89b927);
+ 
+ 
+ ```
+Essa tecnica abaixo usamos nos cards para dar efeito legal de transição ao passar mouse
+ 
+ ```css
+ 
+ .card:hover {
+  transform: translateY(10px);
+  opacity: 0.8;
+}
+ 
+ 
+ ```
+ 
+ Por fim é não menos importante foi o efeito de posibilitar descer apenas os conteudos do card,restante da tela fica fixo,assim os menus</br>
+ e o asside fica sempre na mesma posiçaõ da tela para o usuario.</br>
+ O calculo e levado em consideração ao tamanho do seu header</br>
+ Webkit e para estilizar o scrool,gerando efeito bacana no scroll interno
+ 
+ ```css
+   height: calc(100vh - 70px);
+  overflow-y: scroll;
+}
+ ::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(63, 46, 78);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(148, 140, 155);
+}
+ 
+ ```
+ 
+ 
+ 
+ 
  
  # Feature
   - DOM
