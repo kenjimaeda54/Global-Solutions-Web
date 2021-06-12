@@ -66,7 +66,7 @@ Codigo abaixo estamos usando local storage para persistir nome do usuario na apl
  ~~~
  
  Para adiconar as estrelas que representa a classificação do usuario, de forma dinamica,construimos um objeto</br>
- Dentro do objeto precisa estar o campo que e caputurado com o usuario selecionado  no select e o caminho correto das imagens</br>
+ Dentro do objeto precisa estar o campo que e caputurado com o usuario selecionado e o caminho correto das imagens</br>
  Depois apenas com a função filter você retorna o campo correpondente
  
  ```html
@@ -146,8 +146,15 @@ Codigo abaixo estamos usando local storage para persistir nome do usuario na apl
     
  
  ~~~
+ Logo apos o usuario enviar as fotos e as classificações os campos voltam ao estado inicial,gerando assim uma </br>
+ sensação melhor do usuario com aplicação
+ ```javascript
+  document.querySelector('.hotel-selected').value = 0;
+     document.querySelector('.selected-opinion').value = 0;
+     document.querySelector('textarea').value = '';
+     document.querySelector('input').value = '';
  
- 
+ ```
  
  
  
