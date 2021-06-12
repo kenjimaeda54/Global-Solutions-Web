@@ -135,14 +135,13 @@ Codigo abaixo estamos usando local storage para persistir nome do usuario na apl
  
  Essa tecnica abaixo é excelente para construimos fundos sobresalentes,gerando  efeito bacana em cards e abas de login
  
- ` ``css
+ ```css
   background: rgb(230, 63, 42, 0.2);
   box-shadow: 0px 20px 30px -5px #7f89b927;
   border-radius: 8px;
   filter: drop-shadow(0px 20px 30px -5px #7f89b927);
- 
- 
  ```
+ 
 Essa tecnica abaixo usamos nos cards para dar efeito legal de transição ao passar mouse
  
  ```css
