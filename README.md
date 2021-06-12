@@ -146,8 +146,9 @@ Codigo abaixo estamos usando local storage para persistir nome do usuario na apl
     
  
  ~~~
- Logo apos o usuario enviar as fotos e as classificações os campos voltam ao estado inicial,gerando assim uma </br>
- sensação melhor do usuario com aplicação
+ Logo apos o usuario enviar as fotos e as classificações</br>
+ Os campos voltam ao estado inicial,gerando assim uma </br>
+ sensação melhor ao usuario 
  ```javascript
   document.querySelector('.hotel-selected').value = 0;
      document.querySelector('.selected-opinion').value = 0;
