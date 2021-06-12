@@ -9,7 +9,7 @@ Esta é a solução para o trabalho global solutions</br>
   * <a href='#Desafio' >  Desafio </a>
 * Meus processos
   * <a href='#Construção' >  Construção </a>   
-  * <a href='#o-que-eu-aprendi' >  Aprendizado </a>
+  * <a href='#o-que-nos-aprendemos' >  Aprendizado </a>
   * <a href='#Feature' >  Feature </a>
 * Iniciar o projeto
   * <a href='#Inicio' >  Iniciar </a>   
@@ -41,7 +41,7 @@ Esta é a solução para o trabalho global solutions</br>
   
 
 
-## O que eu aprendi
+## O que aprendemos
 
 Nos aprendemos usar Grid Layout,melhorar as tecnicas em flexbox,utilizar java script e manipular DOM</br>
 As maiores dificuldades foram nas construções do layout adpatavel para desktop e mobile,manipulação de dom e logica progamação</br
@@ -65,7 +65,107 @@ Codigo abaixo estamos usando local storage para persistir nome do usuario na apl
    remove.parentNode.removeChild(remove)
  ~~~
  
- Com html puro e css construimos modais para menu mobile é nas descrições dos hoteis e carros 
+ Para adiconar as estrelas que representa a classificação do usuario, de forma dinamica,construimos um objeto</br>
+ Dentro do objeto precisa estar o campo que e caputurado com o usuario selecionado  no select e o caminho correto das imagens</br>
+ Depois apenas com a função filter você retorna o campo correpondente
+ 
+ ```html
+<div class="select2">   
+            <label for="fselect" > Classificação </label>  
+            <select class="selected-opinion"  > 
+                <option value=0 label="escolha"/>   
+                <option value=1 label=1 />
+                <option value=2 label=2 />
+                <option value=3 label=3 />
+                <option value=4 label=4 />
+                <option value=5 label=5 />
+            </select>
+          </div>  
+ 
+ ~~~javascript
+ const valueSelectedOpinion = document.querySelector(".selected-opinion").value;
+  const opinionSelected = [
+         {value:0,label:"escolha"},
+         {
+          value:1, 
+          star:[
+          "../assests/img/star.svg",
+          "../assests/img/star-empty.svg",
+          "../assests/img/star-empty.svg",
+          "../assests/img/star-empty.svg",
+          "../assests/img/star-empty.svg",
+         ]},
+         {
+          value:2, 
+          star:[
+          "../assests/img/star.svg",
+          "../assests/img/star.svg",
+          "../assests/img/star-empty.svg",
+          "../assests/img/star-empty.svg",
+          "../assests/img/star-empty.svg",
+         ]},
+         {
+          value:3, 
+          star:[
+          "../assests/img/star.svg",
+          "../assests/img/star.svg",
+          "../assests/img/star.svg",
+          "../assests/img/star-empty.svg",
+          "../assests/img/star-empty.svg",
+         ]},
+         {
+          value:4, 
+          star:[
+          "../assests/img/star.svg",
+          "../assests/img/star.svg",
+          "../assests/img/star.svg",
+          "../assests/img/star.svg",
+          "../assests/img/star-empty.svg",
+         ]},
+         {
+          value:5, 
+          star:[
+          "../assests/img/star.svg",
+          "../assests/img/star.svg",
+          "../assests/img/star.svg",
+          "../assests/img/star.svg",
+          "../assests/img/star.svg",
+         ]}
+
+    ]
+    
+     const labelSelectedOpinion = opinionSelected.filter(item=>{
+       if(Number(valueSelectedOpinion) === item.value) return item.star   
+     })
+    
+     starDiv.innerHTML = `<img src=${labelSelectedOpinion[0].star[0]} alt="imagem estrelas feedback" />   
+                               <img src=${labelSelectedOpinion[0].star[1]} alt="imagem estrelas feedback" />                       
+                               <img src=${labelSelectedOpinion[0].star[2]} alt="imagem estrelas feedback" /> 
+                               <img src=${labelSelectedOpinion[0].star[3]} alt="imagem estrelas feedback" /> 
+                               <img src=${labelSelectedOpinion[0].star[4]} alt="imagem estrelas feedback" /> 
+    
+ 
+ ~~~
+ 
+ 
+ 
+ 
+ 
+ Com html puro e css construimos modais para Menu mobile e descrições dos hoteis e carros 
+  No html é necessario colcolar  href="#" , para referenciar o id do modal 
+  
+ ```html
+  <li><span>Descrição:<a href="#locadora-movida" > <small text >clique aqui!</small>  </a>  </span></li>
+    
+   <div id="locadora-movida" class="modal">
+              <div class="modal-container" >
+                <a href="#fechar" title="Fechar" class="fechar">x</a>
+              <div class="modal-content" >
+                   aqui e contteudo do modal
+              </div> 
+             </div> 
+ 
+ ```
  
  ```css
  .modal {
@@ -120,20 +220,7 @@ Codigo abaixo estamos usando local storage para persistir nome do usuario na apl
 }
  
 ```
- No html é necessario colcolar  href="#" , para referenciar o id do modal 
- 
- ```html
-  <li><span>Descrição:<a href="#locadora-movida" > <small text >clique aqui!</small>  </a>  </span></li>
-    
-   <div id="locadora-movida" class="modal">
-              <div class="modal-container" >
-                <a href="#fechar" title="Fechar" class="fechar">x</a>
-              <div class="modal-content" >
-                   aqui e contteudo do modal
-              </div> 
-             </div> 
- 
- ```
+
  
  Essa tecnica abaixo é excelente para construimos fundos sobresalentes,gerando  efeito bacana em cards e abas de login
  
