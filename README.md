@@ -25,10 +25,9 @@ Esta é a solução para o trabalho global solutions</br>
    Preços taxas aplicadas e;  
    Link de acesso ao site oficial.
 
--  Em relaçaõ ao usuario:
+-  Em relaçaõ ao usuario:</br>
    Aplicaçaõ deve ser responsiva ou seja atender a mobiles e desktop
-   Precisa ter uma aba de feedback
-   Precisa ter uma aba dos integrantes do grupo,cada função cada um exerceu
+   Precisa possuir uma aba de feedback e uma aba dos integrantes do grupo,cada função cada um exerceu
  
 
 ## Construção
