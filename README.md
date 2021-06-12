@@ -41,7 +41,7 @@ Esta é a solução para o trabalho global solutions</br>
   
 
 
-## O que aprendemos
+## O que nos aprendemos
 
 Nos aprendemos usar Grid Layout,melhorar as tecnicas em flexbox,utilizar java script e manipular DOM</br>
 As maiores dificuldades foram nas construções do layout adpatavel para desktop e mobile,manipulação de dom e logica progamação</br
