@@ -81,7 +81,7 @@ Codigo abaixo estamos usando local storage para persistir nome do usuario na apl
                 <option value=5 label=5 />
             </select>
           </div>  
- 
+ ```
  ~~~javascript
  const valueSelectedOpinion = document.querySelector(".selected-opinion").value;
   const opinionSelected = [
