@@ -26,7 +26,7 @@ Esta é a solução para o trabalho global solutions</br>
    Link de acesso ao site oficial.
 
 -  Em relaçaõ ao usuario:</br>
-   Aplicaçaõ deve ser responsiva ou seja atender a mobiles e desktop
+   Aplicaçaõ deve ser responsiva ou seja atender a mobiles e desktop</br>
    Precisa possuir uma aba de feedback e uma aba dos integrantes do grupo,cada função cada um exerceu
  
 
