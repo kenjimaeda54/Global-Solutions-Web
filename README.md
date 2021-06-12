@@ -19,11 +19,17 @@ Esta é a solução para o trabalho global solutions</br>
    Em cada opção deverá haver uma imagem, com a legenda do respectivo local e avaliação dos usuários.</br> 
    As opções sugeridas, devem ser apresentadas, conforme avaliação, em ordem decrescente.</br>  
    Ao selecionar a imagem, serão apresentadas as seguintes informações:</br>  
-   Breve descrição;</br>  
-   Localização enfatizando a região e a distância em relação a Avenida Paulista;</br>  
-   Localização com mapa e como chegar;</br>  
-   Preços taxas aplicadas e;</br>  
-   Link de acesso ao site oficial.</br>  
+   Breve descrição;  
+   Localização enfatizando a região e a distância em relação a Avenida Paulista;
+   Localização com mapa e como chegar;  
+   Preços taxas aplicadas e;  
+   Link de acesso ao site oficial.
+
+-  Em relaçaõ ao usuario:
+   Aplicaçaõ deve ser responsiva ou seja atender a mobiles e desktop
+   Precisa ter uma aba de feedback
+   Precisa ter uma aba dos integrantes do grupo,cada função cada um exerceu
+ 
 
 ## Construção
   - CSS
