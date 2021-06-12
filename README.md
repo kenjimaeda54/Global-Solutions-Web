@@ -28,7 +28,7 @@ Esta é a solução para o trabalho global solutions</br>
 ## Construção
   - CSS
   - FlexBox
-  - GRID
+  - GRID Layout
   - Java script
   - HTML
   
