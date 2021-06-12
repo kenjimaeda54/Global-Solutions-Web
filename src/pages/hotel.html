@@ -23,6 +23,7 @@
          </div>
          <div class="aside" >
             <h2>Catalogo</h2>
+             <a   menuModal  href="#menu-modal"  >  <img src="../assests/img/menu.svg" />  </a>
             <ul>
               <li>
                 <img  alt="ícone do menu hotéis" src="../assests/img/briefcase.svg" />
@@ -44,8 +45,38 @@
                 <img  alt="ícone do menu de carro" src="../assests/img/log-out.svg" />
                 <a href="./go-out.html" > Sair </a>
               </li>           
-            </ul>  
-         </div> 
+            </ul> 
+          </div> 
+          <div id="menu-modal" class="modal">
+            <div class="modal-container" >
+              <a href="#fechar" title="Fechar" class="fechar">x</a>
+            <div class="title" > 
+              <h2> Menu </h2>
+            </div>
+            <ul class="modal-content" >
+                <li>
+                  <img class="modal-img-list" alt="ícone do menu hotéis" src="../assests/img/briefcase.svg" />
+                  <a  href="./hotel.html"  > Hotéis </a>
+                </li>
+                <li>
+                  <img class="modal-img-list" alt="ícone do menu de carro" src="../assests/img/truck(1).svg" />
+                  <a href="./car.html">   Locadoras carros </a>
+                </li>
+                <li>
+                  <img class="modal-img-list" alt="ícone do menu de carro" src="../assests/img/message-circle.svg" />
+                  <a href="./fedback.html" > Comentários </a>
+                </li>
+                <li>
+                  <img class="modal-img-list" alt="ícone do menu de carro" src="../assests/img/user.svg" />
+                  <a  href="./group.html" >  Quem somos </a>
+                </li>
+                <li>    
+                  <img class="modal-img-list" alt="ícone do menu de carro" src="../assests/img/log-out.svg" />
+                  <a href="./go-out.html" > Sair </a>
+                </li>                                  
+            </ul>
+            </div>  
+          </div>  
          <div class="main" >
           <div class="main-card" >        
              <div class="card card1"> 
@@ -83,11 +114,10 @@
                  E as principais comodidades nos quartos incluem minibar, ar-condicionado e TV de tela plana.</p>
                  <p> Hotel fica aproximadamente 2,6 km da Avenida Paulista, Bela Vista.</p>
                   <p> Hotel fica a cerca de 260 metros da estação de metro Avenida Paulista.</p>
-                <small modal="small">Alameda Santos, 2233 - Jardim Paulista</small>  
-                               
+                <small modal="small">Alameda Santos, 2233 - Jardim Paulista</small>                       
               </div>
               </div>  
-             </div> 
+            </div> 
             <div class="card card2"> 
               <img src="../assests/img/sheraton 1.svg" alt="hotel blue tree" /> 
             <div  class="nav" >
@@ -435,6 +465,7 @@
               </div>  
              </div> 
         </div>
+     </div>   
     </div>
 </body>
 </html>

@@ -14,3 +14,6 @@ a {
   cursor: pointer;
   border: none;
 }
+a:hover {
+  text-decoration: underline;
+}

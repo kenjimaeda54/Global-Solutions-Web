@@ -52,7 +52,9 @@ img {
     grid-template-columns: 250px auto; /*vertical */
   }
 }
-
+[modal] {
+  display: none;
+}
 .aside h2 {
   display: block;
   margin: 50px auto;
@@ -115,28 +117,28 @@ a {
 }
 .img-user {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 70%;
   position: absolute;
-  width: 120px;
+  width: 200px;
   height: 200px;
-  left: 70px;
+  left: 60px;
   top: -40px;
 }
 .img-user > img {
-  height: 150px;
+  height: 100px;
   width: 100px;
-  border-radius: 70%;
 }
 .img-user1 > img {
-  height: 150px;
-  width: 100px;
-  border-radius: 70%;
+  height: 100px;
+  width: 50px;
 }
 
 .img-user2 > img {
-  height: 150px;
+  height: 100px;
   width: 100px;
-  border-radius: 70%;
+  border-radius: 50%;
 }
 
 .fedback-user {
@@ -248,10 +250,10 @@ textarea {
 
 .img-user1 > img {
   display: flex;
-  width: 70%;
+  width: 50%;
   position: absolute;
-  width: 100px;
-  height: 150px;
+  width: 150px;
+  height: 100px;
   left: 70px;
   top: -40px;
 }
@@ -268,4 +270,188 @@ textarea {
   color: rgb(235, 19, 19);
   font-weight: 500;
   font-style: italic;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-card {
+    height: auto;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-areas:
+      "CD1 CD2"
+      "CD3 CD4"
+      "CD5 CD6";
+  }
+
+  .main-card > a,
+  span,
+  small {
+    font-size: 15px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 930px) {
+  [modal] {
+    display: block !important;
+  }
+  [modal] > img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .modal-container a:hover {
+    text-decoration: underline;
+  }
+
+  .aside a {
+    display: none;
+  }
+
+  .aside ul {
+    display: none;
+  }
+  .nav {
+    width: 100%;
+  }
+  .comment-user {
+    align-items: flex-end;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  .img-user {
+    top: -80px;
+    left: 80px;
+  }
+
+  .comment-user1 {
+    align-items: flex-end;
+  }
+  .img-user1 {
+    top: -80px;
+    left: -90px;
+    height: 5vh;
+  }
+
+  textarea {
+    width: 200px;
+  }
+  .option-user {
+    flex-direction: column;
+  }
+  .hotel-selected {
+    width: 100px;
+  }
+  .selected-opinion {
+    width: 100px;
+  }
+  .modal-container {
+    position: relative;
+  }
+  .modal-container a:hover {
+    text-decoration: underline;
+  }
+
+  .modal-content {
+    position: absolute;
+    width: 300px;
+    left: -220px;
+  }
+  .modal-content > p {
+    font-size: 12px;
+    text-align: justify;
+  }
+  .modal-container {
+    width: 100%;
+  }
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-container {
+  width: 80vw;
+  position: relative;
+  margin: 10% auto;
+  padding: 15px 20px;
+  background: #fa7f72;
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 100px auto;
+  grid-template-areas:
+    "MDCT   MDCT"
+    "MDCI   MDCC";
+  height: 300px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.title {
+  grid-area: MDCT;
+}
+.title > h2 {
+  color: #fffafa;
+}
+
+.modal-img {
+  grid-area: MDCI;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 180px;
+  height: 180px;
+}
+[modal="imagem"] {
+  margin-top: -30px;
+  width: 180px;
+  height: 180px;
+}
+
+.modal-content {
+  grid-area: MDCC;
+  width: 720px;
+}
+.modal-content > p {
+  color: #fffafa;
+  text-align: left;
+}
+
+[modal="small"] {
+  color: #fffafa;
+}
+
+[modal="span"] {
+  color: #fffafa;
+  font-size: 10pt;
+}
+
+.fechar {
+  position: absolute;
+  width: 30px;
+  right: 5px;
+  top: 5px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 5px;
+  background: #ff4545;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #8d0000;
+}
+
+a {
+  text-decoration: none;
 }

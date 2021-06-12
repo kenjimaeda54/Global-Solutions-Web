@@ -52,7 +52,6 @@ img {
     grid-template-columns: 250px auto; /*vertical */
   }
 }
-
 .aside h2 {
   display: block;
   margin: 50px auto;
@@ -68,6 +67,10 @@ img {
 }
 a:hover {
   opacity: 0.7;
+}
+
+[menuModal] {
+  display: none;
 }
 
 .main {
@@ -151,6 +154,7 @@ a:hover {
 .card2 {
   grid-area: CD2;
 }
+
 .card3 {
   grid-area: CD3;
 }
@@ -262,4 +266,80 @@ a {
   margin-top: -40px;
   width: 200px;
   height: 200px;
+}
+@media screen and (max-width: 1200px) {
+  .main-card {
+    height: auto;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-areas:
+      "CD1 CD2"
+      "CD3 CD4"
+      "CD5 CD6";
+  }
+
+  .main-card > a,
+  span,
+  small {
+    font-size: 15px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 930px) {
+  [menuModal] {
+    display: block !important;
+  }
+  [menuModal] > img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .modal-img-list {
+    width: 20px;
+    height: 20px;
+  }
+
+  .aside a {
+    display: none;
+  }
+
+  .aside ul {
+    display: none;
+  }
+  .nav {
+    width: 100%;
+  }
+  .main-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  small {
+    font-size: 11px;
+    font-weight: 500;
+  }
+  [modal="imagem"] {
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    width: 100px;
+    height: 100px;
+  }
+  .modal-container {
+    position: relative;
+  }
+  .modal-container a:hover {
+    text-decoration: underline;
+  }
+
+  .modal-content {
+    position: absolute;
+    width: 300px;
+    left: -220px;
+  }
+  .modal-content > p {
+    font-size: 12px;
+    text-align: justify;
+  }
+  .modal-container {
+    width: 100%;
+  }
 }
