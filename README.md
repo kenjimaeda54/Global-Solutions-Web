@@ -183,10 +183,11 @@ Essa tecnica abaixo usamos nos cards para dar efeito legal de transição ao pas
   - Objetos java script
   - Responsividade
 
-# Iniciar projeto
+# Clone
 - Você precisa apenas clonar o repositorio,para iniciar recomendamos  direto no local host</br>
   Alguns links externos não funcionaram bem com testes em servidores como plugin live server do Vscode</br>
   Mesmo problema se aprensetou usando Mozila ,mesmo em local host. Com chorme sem nenhum servidor externo e sucesso</br>
-  Para otima naveção inicia na tela de login,seu nome vai perseitir ao longo da aplicação e para sair utiliza o botão de sair :blush:
+  Para otima naveção inicia na tela de login,seu nome vai perseitir ao longo da aplicação e para sair utiliza o botão de sair 
+  :wave: :wave: :wave:
   
 
