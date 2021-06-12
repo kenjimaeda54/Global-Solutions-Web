@@ -17,7 +17,7 @@ Esta é a solução para o trabalho global solutions</br>
 ## Visão Geral
 ## Trabalho
 -  Caso de uso Gulever</br>
-   Saite precisa simular dois cassos de uso do Gulever,selecionado foi Hoteis e Locadoras de carro</br>
+   Saite precisa simular dois cassos de uso do Gulever,selecionado foi Hoteis e Locadoras de carro.</br>
    Em cada opção deverá haver uma imagem, com a legenda do respectivo local e avaliação dos usuários.</br> 
    As opções sugeridas, devem ser apresentadas, conforme avaliação, em ordem decrescente.</br>  
    Ao selecionar a imagem, serão apresentadas as seguintes informações:  
@@ -28,8 +28,8 @@ Esta é a solução para o trabalho global solutions</br>
    Link de acesso ao site oficial.
 
 -  Em relaçaõ ao usuario:</br>
-   Aplicação deve ser responsiva ou seja atender a mobiles e desktop</br>
-   Precisa possuir uma aba de feedback e uma aba dos integrantes do grupo,cada função cada um exerceu
+   Aplicação deve ser responsiva ou seja atender a mobiles e desktop.</br>
+   Precisa possuir uma aba de feedback e uma aba dos integrantes do grupo,cada função cada um exerceu.
  
 
 ## Construção
@@ -43,10 +43,10 @@ Esta é a solução para o trabalho global solutions</br>
 
 ## O que nos aprendemos
 
-Nos aprendemos usar Grid Layout,melhorar as tecnicas em flexbox,utilizar java script e manipular DOM</br>
-As maiores dificuldades foram nas construções do layout adpatavel para desktop e mobile,manipulação de dom e logica progamação</br>
+Nos aprendemos usar Grid Layout,melhorar as tecnicas em flexbox,utilizar java script e manipular DOM.</br>
+As maiores dificuldades foram nas construções do layout adpatavel para desktop e mobile,manipulação de dom e logica progamação.</br>
 
-Codigo abaixo estamos usando local storage para persistir nome do usuario na aplicação toda
+Codigo abaixo estamos usando local storage para persistir nome do usuario na aplicação toda.
 
 ~~~javascript 
     const getNameStorage = localStorage.getItem("name");
@@ -54,9 +54,9 @@ Codigo abaixo estamos usando local storage para persistir nome do usuario na apl
     localStorage.clear();
  ~~~
  
- Para adicionar elemento no HTML , usamos querySelector, assim conseguimos pegar a classe</br>
- Então adicionamos elemento filho com a mensagem de erro,caso o usuario não atenda aos requisitos</br>
- Apos o usuario resolver o erro em questão o elmento é destruido  com remove.parentNode.removeChild</br>
+ Para adicionar elemento no HTML , usamos querySelector, assim conseguimos pegar a classe.</br>
+ Então adicionamos elemento filho com a mensagem de erro,caso o usuario não atenda aos requisitos.</br>
+ Apos o usuario resolver o erro em questão o elmento é destruido  com remove.parentNode.removeChild.</br>
 
  ~~~javascript
    const errorFeedback = document.querySelector('.error-feedback');
@@ -65,9 +65,9 @@ Codigo abaixo estamos usando local storage para persistir nome do usuario na apl
    remove.parentNode.removeChild(remove)
  ~~~
  
- Para adiconar as estrelas que representa a classificação do usuario, de forma dinamica,construimos um objeto</br>
- Dentro do objeto precisa estar o campo que e caputurado com o usuario selecionou é o caminho correto das imagens</br>
- Depois apenas com a função filter você retorna o campo correpondente
+ Para adiconar as estrelas que representa a classificação do usuario, de forma dinamica,construimos um objeto.</br>
+ Dentro do objeto precisa estar o campo que e caputurado com o usuario selecionou é o caminho correto das imagens.</br>
+ Depois apenas com a função filter você retorna o campo correpondente.
  
  ```html
 <div class="select2">   
@@ -159,8 +159,8 @@ Codigo abaixo estamos usando local storage para persistir nome do usuario na apl
  
  
  
- Com html puro e css construimos modais para Menu mobile e descrições dos hoteis e carros 
-  No html é necessario colcolar  href="#" , para referenciar o id do modal 
+ Com html puro e css construimos modais para aplicação do Menu mobile é descrições dos hoteis e carros.</br> 
+  No html é necessário colocar  href="#" , para referenciar o id do modal 
   
  ```html
   <li><span>Descrição:<a href="#locadora-movida" > <small text >clique aqui!</small>  </a>  </span></li>
@@ -230,7 +230,7 @@ Codigo abaixo estamos usando local storage para persistir nome do usuario na apl
 ```
 
  
- Essa tecnica abaixo é excelente para construimos fundos sobresalentes,gerando  efeito bacana em cards e abas de login
+ Essa tecnica abaixo é excelente para construimos fundos sobre salentes,gerando  efeito bacana em cards e abas de login.
  
  ```css
   background: rgb(230, 63, 42, 0.2);
@@ -239,7 +239,7 @@ Codigo abaixo estamos usando local storage para persistir nome do usuario na apl
   filter: drop-shadow(0px 20px 30px -5px #7f89b927);
  ```
  
-Essa tecnica abaixo usamos nos cards para dar efeito legal de transição ao passar mouse
+Essa tecnica  usamos nos cards para dar efeito legal de transição ao passar mouse.
  
  ```css
  
@@ -253,7 +253,7 @@ Essa tecnica abaixo usamos nos cards para dar efeito legal de transição ao pas
  
  Por fim é não menos importante.Com codigo abaixo  posibilitamos descer apenas os conteudos do card,restante da tela fica fixo,assim os menus</br>
  e o asside fica sempre na mesma posição,gerando um conforto ao usuario</br>
- O calculo e levado em consideração ao tamanho do seu header</br>
+ O calculo e levado em consideração ao tamanho do seu header.</br>
  Webkit e para estilizar o scrool,gerando efeito bacana no scroll interno
  
  ```css
@@ -280,10 +280,10 @@ Essa tecnica abaixo usamos nos cards para dar efeito legal de transição ao pas
 
 # Inicio
 - Você precisa apenas clonar o repositorio,para iniciar.</br>
-- Recomendamos  direto no local host.</br>
-  Alguns links externos não funcionaram bem com os testes em servidores externos, como plugin live server do Vscode</br>
-  Mesmo problema se aprensetou usando Mozila ,mesmo em local host. Com chorme sem nenhum servidor externo e sucesso</br>
-  Para otima naveção inicia na tela de login,seu nome vai perseitir ao longo da aplicação e para sair utiliza o botão de sair</br> 
+- Recomendamos subir direto no local host.</br>
+  Alguns links externos não funcionaram bem com os testes em servidores externos, como plugin live server do Vscode.</br>
+  Mesmo problema se aprensetou usando Mozila . Com chorme sem nenhum servidor externo e sucesso.</br>
+  Para otima naveção inicia na tela de login,seu nome vai perseitir ao longo da aplicação e para sair utiliza o botão de sair.</br> 
   :wave: :wave: :wave:
   
 
