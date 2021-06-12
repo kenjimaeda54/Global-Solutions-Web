@@ -47,9 +47,9 @@ Codigo abaixo estamos usando local storage para persistir nome do usuario na apl
     localStorage.clear();
  ~~~
  
- Para adicionar elemento no HTML após o usuario não atender aos requisitos exigidos, usamos querySelector, assim conseguimos pegar a classe</br>
- Então adicionamos elemento filho com a mensagem de erro</br>
- Apos o usuario resolver o erro em questão o elmento é desttruido  com remove.parentNode.removeChild</br>
+ Para adicionar elemento no HTML , usamos querySelector, assim conseguimos pegar a classe</br>
+ Então adicionamos elemento filho com a mensagem de erro,caso o usuario não atenda aos requisitos</br>
+ Apos o usuario resolver o erro em questão o elmento é destruido  com remove.parentNode.removeChild</br>
 
  ~~~javascript
    const errorFeedback = document.querySelector('.error-feedback');
@@ -171,10 +171,6 @@ Essa tecnica abaixo usamos nos cards para dar efeito legal de transição ao pas
 }
  
  ```
- 
- 
- 
- 
  
  # Feature
   - DOM
