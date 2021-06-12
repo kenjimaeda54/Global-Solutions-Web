@@ -252,9 +252,9 @@ Essa tecnica  usamos nos cards para dar efeito legal de transição ao passar mo
  ```
  
  Por fim é não menos importante.Com codigo abaixo  posibilitamos descer apenas os conteudos do card,restante da tela fica fixo,assim os menus</br>
- e o asside fica sempre na mesma posição,gerando um conforto ao usuario</br>
+ e o asside fica sempre na mesma posição,gerando um conforto ao usuario.</br>
  O calculo e levado em consideração ao tamanho do seu header.</br>
- Webkit e para estilizar o scrool,gerando efeito bacana no scroll interno
+ Webkit e para estilizar o scrool,gerando efeito bacana no scroll interno.
  
  ```css
    height: calc(100vh - 70px);
