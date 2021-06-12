@@ -154,8 +154,8 @@ Essa tecnica abaixo usamos nos cards para dar efeito legal de transição ao pas
  
  ```
  
- Por fim é não menos importante foi o efeito de posibilitar descer apenas os conteudos do card,restante da tela fica fixo,assim os menus</br>
- e o asside fica sempre na mesma posiçaõ da tela para o usuario.</br>
+ Por fim é não menos importante.Com codigo abaixo  posibilitamos descer apenas os conteudos do card,restante da tela fica fixo,assim os menus</br>
+ e o asside fica sempre na mesma posição,gerando um conforto ao usuario</br>
  O calculo e levado em consideração ao tamanho do seu header</br>
  Webkit e para estilizar o scrool,gerando efeito bacana no scroll interno
  
@@ -178,7 +178,7 @@ Essa tecnica abaixo usamos nos cards para dar efeito legal de transição ao pas
  
  # Feature
   - DOM
-  - Objetos
+  - Objetos java script
   - Responsividade
 
 
