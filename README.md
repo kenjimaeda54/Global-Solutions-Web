@@ -18,7 +18,7 @@ Esta é a solução para o trabalho global solutions</br>
    Saite precisa simular dois cassos de uso do Gulever,selecionado foi Hoteis e Locadoras de carro</br>
    Em cada opção deverá haver uma imagem, com a legenda do respectivo local e avaliação dos usuários.</br> 
    As opções sugeridas, devem ser apresentadas, conforme avaliação, em ordem decrescente.</br>  
-   Ao selecionar a imagem, serão apresentadas as seguintes informações:</br>  
+   Ao selecionar a imagem, serão apresentadas as seguintes informações:  
    Breve descrição;  
    Localização enfatizando a região e a distância em relação a Avenida Paulista;
    Localização com mapa e como chegar;  
